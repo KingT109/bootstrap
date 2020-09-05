@@ -1,0 +1,816 @@
+/* 公共样式 开始 */
+*{
+    margin:0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 公共样式 结束 */
+
+
+/* 超小屏开始 */
+
+/* header start */
+header{
+    min-width: 100%;
+    height: 42px;
+    background-color: #222222;
+}
+header a{
+    color: #9D9D9D;
+    text-decoration: none;
+}
+header a:hover{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    color:#9D9D9D;
+    width: 164px;
+    height: 100%;
+    float: left;
+}
+.logo a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 42px;
+    font-size: 18px;
+}
+nav{
+    width: 678px;
+    height: 100%;
+    float: left;
+}
+nav a{
+    padding:0 2%;
+    height: 100%;
+    float: left;
+}
+.about{
+    color: gray;
+    width: 100px;
+    height: 100%;
+    float: right;
+}
+.about a{
+    width: 50px;
+    height: 100%;
+    line-height: 42px;
+}
+.small-logo{
+    width: 164px;
+    height: 100%;
+    float: left;
+}
+.small-logo a{
+    width: 100%;
+    margin: auto;
+    display: block;
+    line-height: 42px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.small-nav{
+    width: 40px;
+    height: 30px;
+    margin-bottom: 6px;
+    float: right;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    color: white;
+    line-height: 42px;
+    cursor: pointer;
+}
+li,ul{
+    list-style: none;
+}
+.son-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#222222;
+    width: 100vw;
+    top: 42px;
+    text-align: left;
+    /* display: none; */
+    height: 0;
+    transition: height 1s ease;
+    visibility: hidden;
+    overflow: hidden;
+}
+.small-nav:hover{
+    color: #333333;
+}
+.small-nav:hover >.son-nav{
+    display: block;
+    height: 200px;
+    visibility: visible;
+}
+nav{
+    display: none;
+}
+.logo{
+    display: none;
+}
+.about{
+    display: none;
+}
+/* header end */
+
+/* center start */
+.center{
+    min-width: 100%;
+    height: 405px;
+    background: linear-gradient(rgb(56, 2, 56) 10%,rgb(95, 3, 95) 90%);
+    position: relative;
+}
+.center-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 15px 30px;
+    padding:10px;
+    color: white;
+    display: inline;
+    text-align: center;
+}
+.center-content h1{
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+.center-content h2{
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 200;
+}
+.center-content .center-btn{
+    width: 100%;
+    height: 54px;
+    margin: 30px 0 15px;
+}
+.center-content .center-btn a{
+    display: inline-block;
+    color: white;
+    background-color:#337AB7;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 13px 35px 17px;
+    position: relative;
+    text-decoration: none;
+}
+.center-content .center-btn a:hover{
+    background-color:#094880;
+    
+}
+.center-content ul{
+    display: inline;
+}
+.center-content ul a{
+    font-size: 14px;
+    color: gray;
+}
+.center-content ul a:hover{
+    color: white;
+}
+/* center end */
+
+/* twelvegrid start */
+.twelvegrid{
+    min-width: 100%;
+    height: auto;
+    margin: 0 10px;
+    padding:0 6px;
+    /* background-color: greenyellow; */
+    display: inline-block;
+    text-align: center;
+}
+.twelvegrid .twelve-title{
+    border-bottom:1px solid rgb(204, 203, 203);
+    position: relative;
+    box-sizing: border-box;
+}
+.twelvegrid .twelve-title::before{
+    content: "";
+    width:100px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 86px;
+    left: 0;
+}
+.twelvegrid .twelve-title::after{
+    content: "";
+    width:50px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 86px;
+    right: 0;
+}
+.twelvegrid h2{
+    font-size: 30px;
+    margin: 20px 0 10px;
+    color: #333333;
+}
+.twelvegrid p{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.twelve-img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.twelvegrid .container-all div img{
+    width: 90%;
+    height: 90%;
+}
+/* twelvegrid end */
+
+/* copy start */
+.copy{
+    min-width:100%;
+    min-height: 100px;
+    margin-top: 20px;
+}
+/* copy end */
+
+
+/* 超小屏结束 */
+
+/* 小屏开始 */
+@media screen and (min-width:700px){
+
+    /* header start */
+    .small-logo{
+        display: none;
+    }
+    .small-nav{
+        display: none;
+    }
+    header{
+        min-width: 700px;
+        height: 42px;
+        background-color: #222222;
+    }
+    header a{
+        color: #9D9D9D;
+        text-decoration: none;
+    }
+    header a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .header-box{
+        width: 700px;
+        margin:auto;
+    }
+    .logo{
+        color:#9D9D9D;
+        width: 164px;
+        height: 100%;
+        float: left;
+        display: none;
+    }
+    .logo a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    nav{
+        width: 678px;
+        height: 100%;
+        /* float: left; */
+        line-height: 42px;
+        margin: auto;
+        display: block;
+    }
+    nav a{
+        padding:0 1.5%;
+        height: 100%;
+        float: left;
+    }
+    .about{
+        color: gray;
+        width: 100px;
+        height: 100%;
+        float: right;
+        display: none;
+    }
+    .about a{
+        width: 50px;
+        height: 100%;
+        line-height: 42px;
+    }
+    /* header end */
+
+    /* center start */
+    .center{
+        min-width: 700px;
+        height: 480px;
+        background: linear-gradient(rgb(56, 2, 56) 10%,rgb(95, 3, 95) 90%);
+        position: relative;
+    }
+    .center-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 40px 35px;
+        padding:15px;
+        color: white;
+        display: inline;
+        text-align: center;
+    }
+    .center-content h1{
+        font-size: 80px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .center-content h2{
+        font-size: 24px;
+        line-height: 1.25;
+        font-weight: 200;
+    }
+    .center-content .center-btn{
+        width: 100%;
+        height: 60px;
+        margin: 30px 0 15px;
+    }
+    .center-content .center-btn a{
+        display: inline-block;
+        color: white;
+        background-color:#337AB7;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 13px 35px 17px;
+        position: relative;
+        text-decoration: none;
+    }
+    .center-content .center-btn a:hover{
+        background-color:#094880;
+        
+    }
+    .center-content ul{
+        display: inline;
+    }
+    .center-content ul a{
+        font-size: 14px;
+        color: gray;
+    }
+    .center-content ul a:hover{
+        color: white;
+    }
+    /* center end */
+
+    /* twelvegrid start */
+    .twelvegrid{
+        min-width: 700px;
+        height: auto;
+        margin: 0 15px;
+        padding:0 10px;
+        /* background-color: greenyellow; */
+        display: inline-block;
+        text-align: center;
+    }
+    .twelvegrid .twelve-title{
+        border-bottom:1px solid rgb(204, 203, 203);
+        position: relative;
+    }
+    .twelvegrid .twelve-title::before{
+        content: "";
+        width:90px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 86px;
+        left: 0;
+    }
+    .twelvegrid .twelve-title::after{
+        content: "";
+        width:90px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 86px;
+        right: 0;
+    }
+    .twelvegrid h2{
+        font-size: 42px;
+        margin: 20px 0 10px;
+        color: #333333;
+    }
+    .twelvegrid p{
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #333333;
+    }
+    .twelve-img{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .twelvegrid .container-all div img{
+        width: 90%;
+        height: 90%;
+    }
+    /* twelvegrid end */
+
+    /* copy start */
+    .copy{
+        min-width: 700px;
+        min-height: 100px;
+        margin-top: 20px;
+    }
+    /* copy end */
+}
+/* 小屏结束 */
+
+/* 中屏开始 */
+@media screen and (min-width:970px){
+
+    /* header start */
+    header{
+        min-width: 970px;
+        height: 42px;
+        background-color: #222222;
+    }
+    header a{
+        color: #9D9D9D;
+        text-decoration: none;
+    }
+    header a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .header-box{
+        width: 970px;
+        margin:auto;
+    }
+    .logo{
+        color:#9D9D9D;
+        width: 164px;
+        height: 100%;
+        float: left;
+        display: block;
+    }
+    .logo a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    nav{
+        width: 678px;
+        height: 100%;
+        float: left;
+        /* line-height: 42px;    666 */
+        margin: 0;
+    }
+    nav a{
+        padding:0 2%;
+        height: 100%;
+        float: left;
+    }
+    .about{
+        color: gray;
+        width: 100px;
+        height: 100%;
+        float: right;
+        display: block;
+    }
+    .about a{
+        width: 50px;
+        height: 100%;
+        line-height: 42px;
+    }
+    /* header end */
+
+    /* center start */
+    .center{
+        min-width: 970px;
+        height: 490px;
+        background: linear-gradient(rgb(56, 2, 56) 10%,rgb(95, 3, 95) 90%);
+        position: relative;
+    }
+    .center-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 70px 40px;
+        padding:15px;
+        color: white;
+        display: inline;
+        text-align: center;
+    }
+    .center-content h1{
+        font-size: 90px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .center-content h2{
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 200;
+    }
+    .center-content .center-btn{
+        width: 100%;
+        height: 50px;
+        margin: 30px 0 15px;
+    }
+    .center-content .center-btn a{
+        display: inline-block;
+        color: white;
+        background-color:#337AB7;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 13px 35px 17px;
+        position: relative;
+        text-decoration: none;
+    }
+    .center-content .center-btn a:hover{
+        background-color:#094880;
+        
+    }
+    .center-content ul{
+        display: inline;
+    }
+    .center-content ul a{
+        font-size: 14px;
+        color: gray;
+    }
+    .center-content ul a:hover{
+        color: white;
+    }
+    /* center end */
+
+    /* twelvegrid start */
+    .twelvegrid{
+        min-width: 970px;
+        height: auto;
+        margin: 0 15px;
+        padding:0 10px;
+        /* background-color: greenyellow; */
+        display: inline-block;
+        text-align: center;
+    }
+    .twelvegrid .twelve-title{
+        border-bottom:1px solid rgb(204, 203, 203);
+        position: relative;
+        box-sizing: border-box;
+    }
+    .twelvegrid .twelve-title::before{
+        content: "";
+        width:200px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 86px;
+        left: 0;
+    }
+    .twelvegrid .twelve-title::after{
+        content: "";
+        width:180px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 86px;
+        right: 0;
+    }
+    .twelvegrid h2{
+        font-size: 42px;
+        margin: 20px 0 10px;
+        color: #333333;
+    }
+    .twelvegrid p{
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #333333;
+    }
+    .twelve-img{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .twelvegrid .container-all div img{
+        width: 90%;
+        height: 90%;
+        box-sizing: border-box;
+    }
+    /* twelvegrid end */
+
+    /* copy start */
+    .copy{
+        min-width: 970px;
+        min-height: 90px;
+        margin-top: 20px;
+    }
+    /* copy end */
+}
+/* 中屏结束 */
+
+/* 大屏开始 */
+@media screen and (min-width:1170px){
+
+    /* header start */
+    header{
+        min-width: 1170px;
+        height: 42px;
+        background-color: #222222;
+    }
+    header a{
+        color: #9D9D9D;
+        text-decoration: none;
+    }
+    header a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .header-box{
+        width: 1170px;
+        margin:auto;
+    }
+    .logo{
+        color:#9D9D9D;
+        width: 164px;
+        height: 100%;
+        float: left;
+    }
+    .logo a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    nav{
+        width: 678px;
+        height: 100%;
+        float: left;
+        /* line-height: 42px;  666 */
+    }
+    nav a{
+        padding:0 2%;
+        height: 100%;
+        float: left;
+    }
+    .about{
+        color: gray;
+        width: 100px;
+        height: 100%;
+        float: right;
+    }
+    .about a{
+        width: 50px;
+        height: 100%;
+        line-height: 42px;
+    }
+    /* header end */
+
+    /* center start */
+    .center{
+        min-width: 1170px;
+        height: 500px;
+        background: linear-gradient(rgb(56, 2, 56) 10%,rgb(95, 3, 95) 90%);
+        position: relative;
+    }
+    .center-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 100px 50px;
+        padding:15px;
+        color: white;
+        display: inline;
+        text-align: center;
+    }
+    .center-content h1{
+        font-size: 100px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .center-content h2{
+        font-size: 24px;
+        line-height: 1.25;
+        font-weight: 200;
+    }
+    .center-content .center-btn{
+        width: 100%;
+        height: 60px;
+        margin: 30px 0 15px;
+    }
+    .center-content .center-btn a{
+        display: inline-block;
+        color: white;
+        background-color:#337AB7;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 13px 35px 17px;
+        position: relative;
+        text-decoration: none;
+    }
+    .center-content .center-btn a:hover{
+        background-color:#094880;
+        
+    }
+    .center-content ul{
+        display: inline;
+    }
+    .center-content ul a{
+        font-size: 14px;
+        color: gray;
+    }
+    .center-content ul a:hover{
+        color: white;
+    }
+    /* center end */
+
+    /* twelvegrid start */
+    .twelvegrid{
+        min-width: 1170px;
+        height: auto;
+        margin: 0 25px;
+        padding:0 15px;
+        /* background-color: greenyellow; */
+        display: inline-block;
+        text-align: center;
+    }
+    .twelvegrid .twelve-title{
+        border-bottom:1px solid rgb(204, 203, 203);
+        position: relative;
+    }
+    .twelvegrid .twelve-title::before{
+        content: "";
+        width:300px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 86px;
+        left: 0;
+    }
+    .twelvegrid .twelve-title::after{
+        content: "";
+        width:300px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 86px;
+        right: 0;
+    }
+    .twelvegrid h2{
+        font-size: 42px;
+        margin: 20px 0 10px;
+        color: #333333;
+    }
+    .twelvegrid p{
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #333333;
+    }
+    .twelve-img{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .twelvegrid .container-all div img{
+        width: 90%;
+        height: 90%;
+    }
+    /* twelvegrid end */
+
+    /* copy start */
+    .copy{
+        min-width: 1170px;
+        min-height: 100px;
+        margin-top: 20px;
+    }
+    /* copy end */
+}
+/*大屏结束 */
