@@ -57,7 +57,7 @@ nav a{
     float: right;
 }
 .about a{
-    width: 50px;
+    width: 80px;
     height: 100%;
     line-height: 42px;
 }
@@ -105,7 +105,7 @@ li,ul{
 .small-nav:hover{
     color: #333333;
 }
-.small-nav:hover >.son-nav{
+.small-nav:hover>.son-nav{
     display: block;
     height: 200px;
     visibility: visible;
@@ -811,6 +811,31 @@ nav{
         min-height: 100px;
         margin-top: 20px;
     }
+    
     /* copy end */
 }
 /*大屏结束 */
+
+.fff{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(56, 54, 54);
+    border-radius: 20px;
+    position: fixed;
+    bottom: 150px;
+    right: 80px;
+}
+.fff:hover{
+    background-color: #777777;
+}
+.fff a{
+    font-size: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    padding:5px ;
+    margin:0 auto;
+}
+.fff a:hover{
+    color: #ffffff;
+}
